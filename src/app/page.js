@@ -28,15 +28,26 @@ export default function Page() {
 
   const handleDifficultySelect = (selectedDifficulty) => {
     setDifficulty(selectedDifficulty);
+
+    const difficultyMap = {
+      Beginner: "Easy",
+      Intermediate: "Moderate",
+      Expert: "Expert",
+    };
+    const mappedDifficulty = difficultyMap[selectedDifficulty];
+
     fetch("/questions.json")
       .then((res) => res.json())
       .then((data) => {
-        const filteredQuestions = data.questions.filter(
-          (q) => q.difficulty === selectedDifficulty
+        const difficultyData = data.find(
+          (item) => item.level === mappedDifficulty && item.set === "Final Set"
         );
+        const filteredQuestions = difficultyData
+          ? difficultyData.questions
+          : [];
         setQuestions(filteredQuestions.sort(() => Math.random() - 0.5));
+        setView("instructions");
       });
-    setView("instructions");
   };
 
   const handleInstructionsAcknowledge = () => {
