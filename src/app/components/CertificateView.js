@@ -21,8 +21,8 @@ export default function CertificateView({ name }) {
         Scan to Download Your Certificate
       </h1>
       <p className="mb-8 text-lg text-gray-300">
-        Congratulations, {name}! Use your phone's camera to scan the QR code
-        below and download your personalized certificate.
+        Congratulations, {name}! Use your phone&apos;s camera to scan the QR
+        code below and download your personalized certificate.
       </p>
       <div className="rounded-lg bg-white p-4">
         <QRCodeSVG value={certificateUrl} size={256} />

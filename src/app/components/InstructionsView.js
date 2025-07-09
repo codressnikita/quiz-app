@@ -22,7 +22,7 @@ export default function InstructionsView({ onStartQuiz }) {
           <li>Each question has a single correct answer.</li>
           <li>You will have a limited time to answer each question.</li>
           <li>Your score will be calculated based on correct answers.</li>
-          <li>Click "Start Quiz" when you are ready to begin.</li>
+          <li>Click &quot;Start Quiz&quot; when you are ready to begin.</li>
         </ul>
       </div>
       <Button

@@ -50,7 +50,8 @@ export default function QuizClient({ level, initialQuestions }) {
             Quiz Instructions
           </CardTitle>
           <CardDescription className="text-gray-400">
-            You've selected the {level} level. Here's what you need to know.
+            You&apos;ve selected the {level} level. Here&apos;s what you need to
+            know.
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
@@ -64,7 +65,8 @@ export default function QuizClient({ level, initialQuestions }) {
             <li className="flex items-start">
               <Clock className="mr-3 mt-1 h-6 w-6 text-teal-400" />
               <span>
-                You can skip a question, but you won't be able to return to it.
+                You can skip a question, but you won&apos;t be able to return to
+                it.
               </span>
             </li>
             <li className="flex items-start">
