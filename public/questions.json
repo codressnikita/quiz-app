@@ -1,0 +1,322 @@
+[
+  {
+    "level": "Easy",
+    "set": "First Set",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What was the birthplace of O.P. Jindal?",
+        "options": ["Ambala", "Nalwa", "Panipat", "Rohtak"],
+        "correct_answer": "Nalwa"
+      },
+      {
+        "id": 2,
+        "question": "In which year was O.P. Jindal born?",
+        "options": ["1925", "1930", "1935", "1940"],
+        "correct_answer": "1930"
+      },
+      {
+        "id": 3,
+        "question": "What values were O.P. Jindal known for in his personal and professional life?",
+        "options": [
+          "Ambition, risk-taking, and growth",
+          "Hard work, honesty, and humility",
+          "Innovation, strategy, and competition",
+          "Efficiency, fame, and influence"
+        ],
+        "correct_answer": "Hard work, honesty, and humility"
+      },
+      {
+        "id": 4,
+        "question": "What was the name of the company founded by O.P. Jindal in Hisar?",
+        "options": [
+          "Jindal India Limited",
+          "Jindal Steel Works",
+          "Hisar Steel Corporation",
+          "Jindal Industries"
+        ],
+        "correct_answer": "Jindal Industries"
+      },
+      {
+        "id": 5,
+        "question": "In which year did O.P. Jindal pass away?",
+        "options": ["2000", "2005", "2010", "1998"],
+        "correct_answer": "2005"
+      },
+      {
+        "id": 6,
+        "question": "Which state did O.P. Jindal serve as an MLA?",
+        "options": ["Punjab", "Haryana", "Uttar Pradesh", "Delhi"],
+        "correct_answer": "Haryana"
+      },
+      {
+        "id": 7,
+        "question": "What products were manufactured in O.P. Jindal’s early workshop?",
+        "options": [
+          "Steel rails",
+          "Buckets and utensils",
+          "Cars",
+          "Cycle parts"
+        ],
+        "correct_answer": "Buckets and utensils"
+      },
+      {
+        "id": 8,
+        "question": "What was the primary focus of O.P. Jindal’s industrial enterprises?",
+        "options": [
+          "Developing consumer brands",
+          "Self-reliant steel manufacturing",
+          "Importing and trading raw materials",
+          "Mining natural resources"
+        ],
+        "correct_answer": "Self-reliant steel manufacturing"
+      },
+      {
+        "id": 9,
+        "question": "In which city did O.P. Jindal begin his industrial career?",
+        "options": ["Delhi", "Hisar", "Sonipat", "Chandigarh"],
+        "correct_answer": "Hisar"
+      },
+      {
+        "id": 10,
+        "question": "Which role did O.P. Jindal serve in the Haryana state government?",
+        "options": [
+          "Health Minister",
+          "Power Minister",
+          "Finance Minister",
+          "Industries Minister"
+        ],
+        "correct_answer": "Power Minister"
+      },
+      {
+        "id": 11,
+        "question": "Which awards or recognitions did O.P. Jindal receive for his contributions?",
+        "options": [
+          "Padma Shri",
+          "Posthumous industry awards",
+          "Bharat Ratna",
+          "None"
+        ],
+        "correct_answer": "Posthumous industry awards"
+      },
+      {
+        "id": 12,
+        "question": "What were some of the key milestones in the expansion of Jindal Group?",
+        "options": [
+          "Outsourcing all core industrial processes",
+          "Establishment of power and steel plants",
+          "Entry into retail business",
+          "Shift from manufacturing to software ventures"
+        ],
+        "correct_answer": "Establishment of power and steel plants"
+      }
+    ]
+  },
+  {
+    "level": "Easy",
+    "set": "Final Set",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What was O.P. Jindal's father's profession?",
+        "options": ["Teacher", "Farmer", "Shopkeeper", "Engineer"],
+        "correct_answer": "Farmer"
+      },
+      {
+        "id": 2,
+        "question": "What inspired O.P. Jindal's early interest in machines?",
+        "options": [
+          "Watching blacksmiths work",
+          "Listening to radio broadcasts",
+          "Playing with toy engines",
+          "Reading books on engineering"
+        ],
+        "correct_answer": "Watching blacksmiths work"
+      },
+      {
+        "id": 3,
+        "question": "Which business did O.P. Jindal start in Hisar during the 1950s?",
+        "options": [
+          "A utensil manufacturing unit",
+          "A tractor dealership",
+          "A cotton mill",
+          "A tool company"
+        ],
+        "correct_answer": "A utensil manufacturing unit"
+      },
+      {
+        "id": 4,
+        "question": "Name the first steel pipe unit set up by O.P. Jindal.",
+        "options": [
+          "Jindal India Limited",
+          "Jindal Pipes",
+          "Jindal Steel Corp",
+          "Jindal Tube Mills"
+        ],
+        "correct_answer": "Jindal Pipes"
+      },
+      {
+        "id": 5,
+        "question": "How many hours a day did O.P. Jindal work in his early years?",
+        "options": ["6–8 hours", "12–14 hours", "10 hours", "4 hours"],
+        "correct_answer": "12–14 hours"
+      },
+      {
+        "id": 6,
+        "question": "What was O.P. Jindal’s core vision for the future of Indian Industry?",
+        "options": [
+          "Self-reliant",
+          "Export-led",
+          "Import-driven",
+          "Technology-driven"
+        ],
+        "correct_answer": "Self-reliant"
+      },
+      {
+        "id": 7,
+        "question": "By what nickname was O.P. Jindal popularly known within industry?",
+        "options": ["Pipe King", "Steel Tycoon", "Iron Wizard", "Tech Guru"],
+        "correct_answer": "Pipe King"
+      },
+      {
+        "id": 8,
+        "question": "Which city became central to the Jindal empire?",
+        "options": ["Chandigarh", "Hisar", "Noida", "Delhi"],
+        "correct_answer": "Hisar"
+      },
+      {
+        "id": 9,
+        "question": "What kind of entrepreneur was O.P. Jindal?",
+        "options": [
+          "Heir to family business",
+          "First-generation entrepreneur",
+          "Politically supported",
+          "Internationally trained"
+        ],
+        "correct_answer": "First-generation entrepreneur"
+      },
+      {
+        "id": 10,
+        "question": "What was India’s greatest resource, according to O.P. Jindal?",
+        "options": [
+          "Minerals",
+          "Youth and talent",
+          "Oil reserves",
+          "Industries"
+        ],
+        "correct_answer": "Youth and talent"
+      },
+      {
+        "id": 11,
+        "question": "What social initiatives were supported by O.P. Jindal during his lifetime?",
+        "options": [
+          "Public infrastructure",
+          "Education and rural development",
+          "Creative arts and media",
+          "Environmental awareness"
+        ],
+        "correct_answer": "Education and rural development"
+      },
+      {
+        "id": 12,
+        "question": "Which political party was O.P. Jindal associated with?",
+        "options": [
+          "Bharatiya Janata Party",
+          "Indian National Congress",
+          "Communist Party of India",
+          "Aam Aadmi Party"
+        ],
+        "correct_answer": "Indian National Congress"
+      }
+    ]
+  },
+  {
+    "level": "Moderate",
+    "set": "First Set",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What was O.P. Jindal’s view on foreign aid?",
+        "options": ["Dependent", "Cautionary", "Essential", "Unavoidable"],
+        "correct_answer": "Cautionary"
+      },
+      {
+        "id": 2,
+        "question": "How did O.P. Jindal’s leadership influence the steel sector in India?",
+        "options": [
+          "He boosted steel exports",
+          "He set benchmarks for integrated steel production",
+          "He privatized public sector companies",
+          "He imported steel and increased foreign investment"
+        ],
+        "correct_answer": "He set benchmarks for integrated steel production"
+      },
+      {
+        "id": 3,
+        "question": "What was O.P. Jindal’s philosophy on industrial development?",
+        "options": [
+          "Outsourcing manufacturing to streamline operations",
+          "Promoting indigenous industry and self-reliance",
+          "Boosting imports to scale faster",
+          "Importing advanced machinery to reduce manufacturing costs"
+        ],
+        "correct_answer": "Promoting indigenous industry and self-reliance"
+      },
+      {
+        "id": 4,
+        "question": "What structural challenge did Jindal Group face in its early years and how was it overcome?",
+        "options": [
+          "High competition, overcame through price cuts",
+          "Lack of capital, overcame through innovation",
+          "Low market demand, overcame through marketing efforts",
+          "Lack of skilled labour, overcame through training programmes"
+        ],
+        "correct_answer": "Lack of capital, overcame through innovation"
+      },
+      {
+        "id": 5,
+        "question": "Discuss the significance of O.P. Jindal’s vision for vertical integration in steel manufacturing.",
+        "options": [
+          "Improved supply chain control",
+          "Greater reliance on international partners",
+          "Increased outsourcing",
+          "Concentrated company’s growth to one sector"
+        ],
+        "correct_answer": "Improved supply chain control"
+      },
+      {
+        "id": 6,
+        "question": "What type of books influenced O.P. Jindal the most?",
+        "options": [
+          "Engineering manuals",
+          "Autobiographies",
+          "Spiritual texts",
+          "Economic reports"
+        ],
+        "correct_answer": "Spiritual texts"
+      },
+      {
+        "id": 7,
+        "question": "Describe O.P. Jindal’s early interest in machinery and its impact on his career.",
+        "options": [
+          "Motivated him to import advanced machinery",
+          "Inspired him to create machine-driven industry",
+          "Led him to work in farming",
+          "Inspired him to go abroad and learn about machines"
+        ],
+        "correct_answer": "Inspired him to create machine-driven industry"
+      },
+      {
+        "id": 8,
+        "question": "Evaluate the political and industrial synergy in O.P. Jindal’s career.",
+        "options": [
+          "Separated political and industrial roles completely",
+          "Aligned politics to support industry",
+          "Prioritized political office over business leadership",
+          "Ensured minimal overlap between industry and politics"
+        ],
+        "correct_answer": "Aligned politics to support industry"
+      }
+    ]
+  }
+]
