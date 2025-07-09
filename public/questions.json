@@ -316,6 +316,459 @@
           "Ensured minimal overlap between industry and politics"
         ],
         "correct_answer": "Aligned politics to support industry"
+      },
+      {
+        "id": 9,
+        "question": "What was a notable feature of O.P. Jindal’s management style?",
+        "options": [
+          "Top-down hierarchy",
+          "Hands-on technical involvement",
+          "Weekly memos",
+          "Anonymous feedback"
+        ],
+        "correct_answer": "Hands-on technical involvement"
+      },
+      {
+        "id": 10,
+        "question": "In what ways did O.P. Jindal’s companies integrate technology into manufacturing?",
+        "options": [
+          "Focused on cost-saving manual labour",
+          "Adopted automation and new machinery",
+          "Focused primarily on traditional craftsmanship",
+          "Used imported technologies"
+        ],
+        "correct_answer": "Adopted automation and new machinery"
+      },
+      {
+        "id": 11,
+        "question": "What was O.P. Jindal’s view on self-reliance?",
+        "options": [
+          "It is the soul of development",
+          "It slows down industrial competitiveness",
+          "It alienates foreign allies",
+          "It reduces foreign dependence"
+        ],
+        "correct_answer": "It is the soul of development"
+      },
+      {
+        "id": 12,
+        "question": "What legacy project did O.P. Jindal hope would outlast him?",
+        "options": [
+          "His political career",
+          "A network of self-sufficient manufacturing units",
+          "An industrial empire led by global talent",
+          "A reputed global brand"
+        ],
+        "correct_answer": "A network of self-sufficient manufacturing units"
+      }
+    ]
+  },
+  {
+    "level": "Moderate",
+    "set": "Final Set",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Which personal habit was O.P. Jindal known for?",
+        "options": [
+          "Waking up at 4 AM to visit factories",
+          "Maintaining a strict 9-to-5 schedule",
+          "Practicing yoga daily",
+          "Starting each day with market reports and business news"
+        ],
+        "correct_answer": "Waking up at 4 AM to visit factories"
+      },
+      {
+        "id": 2,
+        "question": "How did O.P. Jindal treat factory workers?",
+        "options": [
+          "With formality while maintaining a distance",
+          "With familiarity and direct dialogue",
+          "Through supervisors and managers",
+          "With strict discipline and limited interaction"
+        ],
+        "correct_answer": "With familiarity and direct dialogue"
+      },
+      {
+        "id": 3,
+        "question": "What did O.P. Jindal often do with foreign machines?",
+        "options": [
+          "Reverse-engineer and improve them",
+          "Replace them with indigenous machines",
+          "Used them without modification",
+          "Replicated their design for local manufacturing"
+        ],
+        "correct_answer": "Reverse-engineer and improve them"
+      },
+      {
+        "id": 4,
+        "question": "Why did O.P. Jindal resist going public early on?",
+        "options": [
+          "Avoided taxation",
+          "Concerned about losing control",
+          "Disliked shareholders",
+          "Believed that markets were too volatile"
+        ],
+        "correct_answer": "Concerned about losing control"
+      },
+      {
+        "id": 5,
+        "question": "How did O.P. Jindal solve power cut issues?",
+        "options": [
+          "Installed private power setups",
+          "Reduced shifts",
+          "Installed solar panels",
+          "Closed factories early"
+        ],
+        "correct_answer": "Installed private power setups"
+      },
+      {
+        "id": 6,
+        "question": "What lessons can modern Indian entrepreneurs learn from O.P. Jindal’s journey?",
+        "options": [
+          "Prioritize rapid profits over long-term value creation",
+          "Embrace resilience and ethics",
+          "Avoid taking risks and personal involvement in operations",
+          "Focus solely on high-growth urban markets"
+        ],
+        "correct_answer": "Embrace resilience and ethics"
+      },
+      {
+        "id": 7,
+        "question": "What was a core idea that O.P. Jindal followed when hiring employees?",
+        "options": [
+          "Hire engineers with a passion for machines",
+          "Prioritise candidates with corporate experience",
+          "Prefer engineers with advanced foreign degrees",
+          "Avoid hiring locally"
+        ],
+        "correct_answer": "Hire engineers with a passion for machines"
+      },
+      {
+        "id": 8,
+        "question": "Why was the Hisar factory pioneering?",
+        "options": [
+          "First to use indigenous pipe-making machines",
+          "First to export machinery",
+          "Largest in Asia",
+          "Solar-powered factory"
+        ],
+        "correct_answer": "First to use indigenous pipe-making machines"
+      },
+      {
+        "id": 9,
+        "question": "How did O.P. Jindal’s values reflect in the operational policies of the group companies?",
+        "options": [
+          "Maximisation of shareholder profits at all costs",
+          "Employee welfare and ethical practices",
+          "Lean and minimal HR policies",
+          "High turnover in leadership roles"
+        ],
+        "correct_answer": "Employee welfare and ethical practices"
+      },
+      {
+        "id": 10,
+        "question": "How did O.P. Jindal contribute to India’s self-reliance in steel production?",
+        "options": [
+          "By importing low-cost steel",
+          "By setting up indigenous plants",
+          "By exporting ore directly",
+          "By lobbying international agencies"
+        ],
+        "correct_answer": "By setting up indigenous plants"
+      },
+      {
+        "id": 11,
+        "question": "Examine the legacy of O.P. Jindal in shaping the corporate governance culture in Indian industry.",
+        "options": [
+          "Encouraged personality-driven leadership",
+          "Instilled transparent governance",
+          "Promoted family-led governance",
+          "Fostered hierarchical models of governance"
+        ],
+        "correct_answer": "Instilled transparent governance"
+      },
+      {
+        "id": 12,
+        "question": "How did O.P. Jindal’s early experiences as a mechanic shape his approach to industrial leadership?",
+        "options": [
+          "He relied entirely on technical experts",
+          "He emphasized hands-on problem-solving",
+          "He believed that manual work should be separated from executive roles",
+          "He focused on administrative work and avoided technical work"
+        ],
+        "correct_answer": "He emphasized hands-on problem-solving"
+      }
+    ]
+  },
+  {
+    "level": "Expert",
+    "set": "First Set",
+    "questions": [
+      {
+        "id": 1,
+        "question": "How did O.P. Jindal manage the balance between entrepreneurship and public service?",
+        "options": [
+          "Prioritised politics over business operations",
+          "Balanced both roles effectively",
+          "Delegated public service responsibilities",
+          "Stepped away from business during political career"
+        ],
+        "correct_answer": "Balanced both roles effectively"
+      },
+      {
+        "id": 2,
+        "question": "What were the global influences on O.P. Jindal’s approach to business and innovation?",
+        "options": [
+          "Followed the model of American tech companies",
+          "Localized global technologies",
+          "Focused solely on indigenous practices",
+          "Followed Japanese models"
+        ],
+        "correct_answer": "Localized global technologies"
+      },
+      {
+        "id": 3,
+        "question": "Describe the diversification strategy of Jindal Group under O.P. Jindal’s leadership.",
+        "options": [
+          "Concentrated all efforts to steel production",
+          "Expanded to power and infrastructure",
+          "Moved into agriculture",
+          "Focused on automobiles"
+        ],
+        "correct_answer": "Expanded to power and infrastructure"
+      },
+      {
+        "id": 4,
+        "question": "What motivated O.P. Jindal to begin manufacturing pipe bends and sockets from scrap steel?",
+        "options": [
+          "He wanted to reduce production costs",
+          "A reaction to foreign branding on steel pipes",
+          "Advice from early bureaucrats on steel-sector dependence",
+          "Observing inefficiencies in import logistics"
+        ],
+        "correct_answer": "Observing inefficiencies in import logistics"
+      },
+      {
+        "id": 5,
+        "question": "What was O.P. Jindal’s unique approach to meetings?",
+        "options": [
+          "Formal meetings in boardrooms",
+          "Walk-and-talks around machines",
+          "Virtual meetings with department heads",
+          "Relied on presentations, written reports and memos"
+        ],
+        "correct_answer": "Walk-and-talks around machines"
+      },
+      {
+        "id": 6,
+        "question": "Which corporate governance model was advocated by O.P. Jindal?",
+        "options": [
+          "Independent board structure",
+          "Family-run decision making model",
+          "Informal leadership through seniority",
+          "CEO-dominant model"
+        ],
+        "correct_answer": "Family-run decision making model"
+      },
+      {
+        "id": 7,
+        "question": "How did O.P. Jindal deal with restrictive industrial policies?",
+        "options": [
+          "Paused expansion plans",
+          "Innovated around them",
+          "Lobbied for government reforms",
+          "Shifted operations abroad"
+        ],
+        "correct_answer": "Innovated around them"
+      },
+      {
+        "id": 8,
+        "question": "What was unique in O.P. Jindal’s engineering judgment?",
+        "options": [
+          "He listened to machines",
+          "He rejected manuals",
+          "He relied on luck",
+          "He followed manuals strictly"
+        ],
+        "correct_answer": "He listened to machines"
+      },
+      {
+        "id": 9,
+        "question": "Which philosophies influenced O.P. Jindal’s industrial ideas?",
+        "options": [
+          "Soviet planning",
+          "Gandhian and Nehruvian ideals",
+          "Capitalist markets",
+          "Western socialism"
+        ],
+        "correct_answer": "Gandhian and Nehruvian ideals"
+      },
+      {
+        "id": 10,
+        "question": "How did O.P. Jindal interpret liberalisation of the 1990s?",
+        "options": [
+          "A fleeting phenomenon",
+          "A threat",
+          "An opportunity",
+          "A distraction"
+        ],
+        "correct_answer": "An opportunity"
+      },
+      {
+        "id": 11,
+        "question": "What did O.P. Jindal believe about Indian engineers?",
+        "options": [
+          "They can build anything if trusted",
+          "They can excel with global training",
+          "They thrive when given responsibility",
+          "They only need the opportunity to prove their potential"
+        ],
+        "correct_answer": "They can build anything if trusted"
+      },
+      {
+        "id": 12,
+        "question": "What did O.P. Jindal describe as the biggest barrier to India’s industrial future?",
+        "options": [
+          "Self-doubt",
+          "Political instability",
+          "Lack of capital",
+          "Absence of national unity"
+        ],
+        "correct_answer": "Self-doubt"
+      }
+    ]
+  },
+  {
+    "level": "Expert",
+    "set": "Final Set",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What symbolic meaning did steel hold for O.P. Jindal?",
+        "options": [
+          "Wealth",
+          "Nation-building",
+          "Global dominance",
+          "Strength"
+        ],
+        "correct_answer": "Nation-building"
+      },
+      {
+        "id": 2,
+        "question": "Which Indian value did O.P. Jindal say “runs through the veins of every machine I make”?",
+        "options": ["Dharma", "Karma", "Moksha", "Niti"],
+        "correct_answer": "Karma"
+      },
+      {
+        "id": 3,
+        "question": "What phrase did O.P. Jindal often use for explaining industrial discipline?",
+        "options": [
+          "Steel has no shortcuts.",
+          "Engineers run empires.",
+          "Failure fuels fire.",
+          "Discipline defines destiny."
+        ],
+        "correct_answer": "Steel has no shortcuts."
+      },
+      {
+        "id": 4,
+        "question": "What did O.P. Jindal say about copying Western models?",
+        "options": [
+          "We should imitate and improvise.",
+          "We can do better in our own way.",
+          "We can borrow and blend.",
+          "We should respect and repeat."
+        ],
+        "correct_answer": "We can do better in our own way."
+      },
+      {
+        "id": 5,
+        "question": "In what way did O.P. Jindal see factories as educational spaces?",
+        "options": [
+          "To train workers in discipline and ethics",
+          "To reduce dependence on formal education",
+          "To study human resource practices",
+          "To train managers in leadership"
+        ],
+        "correct_answer": "To train workers in discipline and ethics"
+      },
+      {
+        "id": 6,
+        "question": "Why did O.P. Jindal believe strongly in local sourcing?",
+        "options": [
+          "To cut costs",
+          "To empower communities",
+          "To reduce import duties",
+          "To avoid supply chain delays"
+        ],
+        "correct_answer": "To empower communities"
+      },
+      {
+        "id": 7,
+        "question": "What recurring metaphor did O.P. Jindal use for Indian industry?",
+        "options": [
+          "A rising sun for our economy",
+          "A steel spine for our nation",
+          "An engine of growth",
+          "A steel bridge to progress"
+        ],
+        "correct_answer": "A steel spine for our nation"
+      },
+      {
+        "id": 8,
+        "question": "How did O.P. Jindal describe the perfect engineer?",
+        "options": [
+          "A man who knows theory.",
+          "A man who talks to machines.",
+          "A man who avoids manuals.",
+          "A man who fixes without tools."
+        ],
+        "correct_answer": "A man who talks to machines."
+      },
+      {
+        "id": 9,
+        "question": "Which forward-looking industrial practice did O.P. Jindal integrate into his steel plants—well ahead of widespread adoption?",
+        "options": [
+          "Waste-to-wealth plastic recycling",
+          "Coal-gasification electric furnaces",
+          "Renewable/green energy integration in steel manufacturing",
+          "Solar-panel roofing for administrative buildings"
+        ],
+        "correct_answer": "Coal-gasification electric furnaces"
+      },
+      {
+        "id": 10,
+        "question": "What core manufacturing principle did O.P. Jindal follow?",
+        "options": [
+          "Trial and error",
+          "Standardization",
+          "Automation",
+          "Export focus"
+        ],
+        "correct_answer": "Trial and error"
+      },
+      {
+        "id": 11,
+        "question": "According to O.P. Jindal, what must a person first become to be a successful entrepreneur?",
+        "options": [
+          "Politician",
+          "Mechanic",
+          "Highly Educated",
+          "Experienced Leader"
+        ],
+        "correct_answer": "Mechanic"
+      },
+      {
+        "id": 12,
+        "question": "Why did O.P. Jindal avoid speculative industries?",
+        "options": [
+          "Lacked long-term sustainability",
+          "Lacked any national value",
+          "Diverted focus from core industrial development",
+          "Involved high risk and offered low returns"
+        ],
+        "correct_answer": "Lacked long-term sustainability"
       }
     ]
   }

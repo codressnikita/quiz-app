@@ -3,47 +3,102 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import Image from "next/image";
 
-export default function QuizView({ questions, onFinish }) {
+export default function QuizView({ questions, onFinish, difficulty }) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [score, setScore] = useState(0);
+  const [timeLeft, setTimeLeft] = useState(120);
 
-  const handleNext = () => {
-    if (selectedAnswer === questions[currentQuestionIndex].correct_answer) {
-      setScore(score + 1);
+  const currentQuestion = questions[currentQuestionIndex];
+  const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
+
+  useEffect(() => {
+    if (timeLeft <= 0) {
+      onFinish(score, questions.length);
+      return;
     }
-    setSelectedAnswer(null);
-    setCurrentQuestionIndex(currentQuestionIndex + 1);
+    const timerId = setInterval(() => setTimeLeft((t) => t - 1), 1000);
+    return () => clearInterval(timerId);
+  }, [timeLeft, onFinish, score, questions.length]);
+
+  useEffect(() => {
+    if (selectedAnswer === null) return;
+
+    const timeoutId = setTimeout(() => {
+      const isCorrect =
+        selectedAnswer === questions[currentQuestionIndex].correct_answer;
+      const newScore = isCorrect ? score + 1 : score;
+
+      if (currentQuestionIndex < questions.length - 1) {
+        setScore(newScore);
+        setCurrentQuestionIndex(currentQuestionIndex + 1);
+        setSelectedAnswer(null);
+      } else {
+        onFinish(newScore, questions.length);
+      }
+    }, 1500);
+
+    return () => clearTimeout(timeoutId);
+  }, [selectedAnswer, currentQuestionIndex, questions, onFinish, score]);
+
+  const handleAnswerSelect = (option) => {
+    if (selectedAnswer !== null) return;
+    setSelectedAnswer(option);
   };
 
-  const handleFinish = () => {
-    let finalScore = score;
-    if (selectedAnswer === questions[currentQuestionIndex].correct_answer) {
-      finalScore = score + 1;
+  const getButtonClass = (option) => {
+    const baseClasses =
+      "w-full transform rounded-lg border-2 px-6 py-4 text-lg transition justify-between items-center flex";
+    if (selectedAnswer !== null) {
+      const isCorrectAnswer =
+        option === questions[currentQuestionIndex].correct_answer;
+      if (isCorrectAnswer) {
+        return `${baseClasses} animate-blink border-green-500 text-white`;
+      }
+      if (option === selectedAnswer) {
+        return `${baseClasses} border-red-500 bg-red-500/20 text-white`;
+      }
+      return `${baseClasses} border-gray-600 bg-transparent text-gray-500`;
     }
-    onFinish(finalScore, questions.length);
+    return `${baseClasses} border-brand-primary bg-transparent text-gray-300 hover:bg-brand-primary/20`;
   };
 
   if (questions.length === 0) {
     return <div>Loading questions...</div>;
   }
 
-  const currentQuestion = questions[currentQuestionIndex];
-  const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
-  const isLastQuestion = currentQuestionIndex === questions.length - 1;
+  const minutes = Math.floor(timeLeft / 60);
+  const seconds = timeLeft % 60;
 
   return (
-    <div className="z-10 flex w-full max-w-2xl flex-col items-center justify-center p-4 text-center">
-      <Image
-        src="/logo.png"
-        alt="Logo"
-        width={100}
-        height={100}
-        className="mb-4"
-      />
+    <div className="z-10 flex w-full max-w-3xl flex-col items-center justify-center p-4 text-center">
+      <div className="mb-4 flex w-full items-center justify-between">
+        <div className="rounded-full bg-gray-800 px-4 py-1 text-sm font-semibold text-brand-primary">
+          {difficulty}
+        </div>
+        <div className="flex items-center space-x-2 text-lg font-semibold text-brand-primary">
+          <svg
+            className="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+          <span className="font-mono">
+            {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
+          </span>
+        </div>
+      </div>
       <Progress value={progress} className="mb-4 w-full" />
+
       <h2 className="mb-6 text-2xl font-semibold">
         {currentQuestion.question}
       </h2>
@@ -51,36 +106,30 @@ export default function QuizView({ questions, onFinish }) {
         {currentQuestion.options.map((option) => (
           <Button
             key={option}
-            onClick={() => setSelectedAnswer(option)}
-            variant={selectedAnswer === option ? "default" : "outline"}
-            className={`w-full transform rounded-lg border-2 px-6 py-4 text-lg transition hover:scale-105 ${
-              selectedAnswer === option
-                ? "border-brand-primary bg-brand-primary text-black"
-                : "border-gray-600 bg-gray-800 text-gray-300 hover:bg-gray-700"
-            }`}
+            onClick={() => handleAnswerSelect(option)}
+            disabled={selectedAnswer !== null}
+            className={getButtonClass(option)}
           >
-            {option}
+            <span className="text-left">{option}</span>
+            {selectedAnswer !== null &&
+              option === currentQuestion.correct_answer && (
+                <svg
+                  className="h-6 w-6 text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              )}
           </Button>
         ))}
-      </div>
-      <div className="mt-8">
-        {isLastQuestion ? (
-          <Button
-            onClick={handleFinish}
-            disabled={!selectedAnswer}
-            className="w-48 transform rounded-full bg-brand-primary px-8 py-4 text-lg font-semibold text-black transition hover:scale-105 hover:bg-brand-primary/90 disabled:cursor-not-allowed disabled:bg-gray-600"
-          >
-            Finish
-          </Button>
-        ) : (
-          <Button
-            onClick={handleNext}
-            disabled={!selectedAnswer}
-            className="w-48 transform rounded-full bg-gray-500 px-8 py-4 text-lg font-semibold transition hover:scale-105 hover:bg-gray-600 disabled:cursor-not-allowed"
-          >
-            Skip / Next
-          </Button>
-        )}
       </div>
     </div>
   );

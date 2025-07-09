@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import IntroView from "./components/IntroView";
 import NameView from "./components/NameView";
 import DifficultyView from "./components/DifficultyView";
@@ -8,6 +8,7 @@ import InstructionsView from "./components/InstructionsView";
 import QuizView from "./components/QuizView";
 import ResultsView from "./components/ResultsView";
 import CertificateView from "./components/CertificateView";
+import Image from "next/image";
 
 export default function Page() {
   const [view, setView] = useState("intro");
@@ -16,6 +17,21 @@ export default function Page() {
   const [score, setScore] = useState(0);
   const [totalQuestions, setTotalQuestions] = useState(0);
   const [questions, setQuestions] = useState([]);
+  const [allQuestionsData, setAllQuestionsData] = useState([]);
+  const [difficultyOptions, setDifficultyOptions] = useState([]);
+
+  useEffect(() => {
+    fetch("/questions.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setAllQuestionsData(data);
+        const options = data.map((item) => ({
+          level: item.level,
+          set: item.set,
+        }));
+        setDifficultyOptions(options);
+      });
+  }, []);
 
   const handleStartQuiz = () => {
     setView("name");
@@ -27,27 +43,16 @@ export default function Page() {
   };
 
   const handleDifficultySelect = (selectedDifficulty) => {
-    setDifficulty(selectedDifficulty);
+    setDifficulty(`${selectedDifficulty.level} - ${selectedDifficulty.set}`);
 
-    const difficultyMap = {
-      Beginner: "Easy",
-      Intermediate: "Moderate",
-      Expert: "Expert",
-    };
-    const mappedDifficulty = difficultyMap[selectedDifficulty];
-
-    fetch("/questions.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const difficultyData = data.find(
-          (item) => item.level === mappedDifficulty && item.set === "Final Set"
-        );
-        const filteredQuestions = difficultyData
-          ? difficultyData.questions
-          : [];
-        setQuestions(filteredQuestions.sort(() => Math.random() - 0.5));
-        setView("instructions");
-      });
+    const difficultyData = allQuestionsData.find(
+      (item) =>
+        item.level === selectedDifficulty.level &&
+        item.set === selectedDifficulty.set
+    );
+    const filteredQuestions = difficultyData ? difficultyData.questions : [];
+    setQuestions(filteredQuestions.sort(() => Math.random() - 0.5));
+    setView("instructions");
   };
 
   const handleInstructionsAcknowledge = () => {
@@ -75,16 +80,30 @@ export default function Page() {
 
   return (
     <main className="flex h-full w-full flex-col items-center justify-center bg-black text-white">
+      <Image
+        src="/logo.png"
+        alt="Logo"
+        width={view === "quiz" || view === "results" ? 300 : 400}
+        height={view === "quiz" || view === "results" ? 200 : 300}
+        className="mb-8"
+      />
       {view === "intro" && <IntroView onStartQuiz={handleStartQuiz} />}
       {view === "name" && <NameView onNext={handleNameSubmit} />}
       {view === "difficulty" && (
-        <DifficultyView onSelectDifficulty={handleDifficultySelect} />
+        <DifficultyView
+          onSelectDifficulty={handleDifficultySelect}
+          difficultyOptions={difficultyOptions}
+        />
       )}
       {view === "instructions" && (
         <InstructionsView onStartQuiz={handleInstructionsAcknowledge} />
       )}
       {view === "quiz" && (
-        <QuizView questions={questions} onFinish={handleQuizFinish} />
+        <QuizView
+          questions={questions}
+          onFinish={handleQuizFinish}
+          difficulty={difficulty}
+        />
       )}
       {view === "results" && (
         <ResultsView

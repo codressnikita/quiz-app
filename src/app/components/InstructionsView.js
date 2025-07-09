@@ -1,28 +1,44 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 
 export default function InstructionsView({ onStartQuiz }) {
+  const instructions = [
+    "Each question has a single correct answer.",
+    "You will have a limited time to answer each question.",
+    "Your score will be calculated based on correct answers.",
+    'Click "Start Quiz" when you are ready to begin.',
+  ];
+
   return (
     <div className="z-10 flex flex-col items-center justify-center p-4 text-center">
-      <Image
-        src="/logo.png"
-        alt="Logo"
-        width={150}
-        height={150}
-        className="mb-8"
-      />
       <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">
         Instructions
       </h1>
       <div className="mb-8 max-w-2xl text-lg text-gray-300">
         <p className="mb-4">Welcome to the quiz! Here are the rules:</p>
-        <ul className="list-disc space-y-2 text-left">
-          <li>Each question has a single correct answer.</li>
-          <li>You will have a limited time to answer each question.</li>
-          <li>Your score will be calculated based on correct answers.</li>
-          <li>Click &quot;Start Quiz&quot; when you are ready to begin.</li>
+        <ul className="space-y-3 text-left">
+          {instructions.map((instruction, index) => (
+            <li key={index} className="flex items-start">
+              <span className="mr-2 mt-1.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-brand-primary text-black">
+                <svg
+                  className="h-3 w-3"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="4"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </span>
+              <span>{instruction}</span>
+            </li>
+          ))}
         </ul>
       </div>
       <Button

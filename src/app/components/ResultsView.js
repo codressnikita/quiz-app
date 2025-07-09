@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -10,17 +11,24 @@ export default function ResultsView({
   onGenerateCertificate,
   onRestart,
 }) {
+  const [timeLeft, setTimeLeft] = useState(60);
   const incorrectAnswers = totalQuestions - score;
+
+  useEffect(() => {
+    if (timeLeft <= 0) {
+      onRestart();
+      return;
+    }
+
+    const timerId = setInterval(() => {
+      setTimeLeft((t) => t - 1);
+    }, 1000);
+
+    return () => clearInterval(timerId);
+  }, [timeLeft, onRestart]);
 
   return (
     <div className="z-10 flex w-full max-w-2xl flex-col items-center justify-center p-4 text-center">
-      <Image
-        src="/logo.png"
-        alt="Logo"
-        width={150}
-        height={150}
-        className="mb-8"
-      />
       <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">
         Quiz Complete!
       </h1>
@@ -40,12 +48,12 @@ export default function ResultsView({
           {score} / {totalQuestions}
         </div>
       </div>
-      <div className="flex space-x-4">
+      <div className="flex flex-wrap justify-center gap-4">
         <Button
           onClick={onGenerateCertificate}
           className="w-64 transform rounded-full bg-brand-primary px-8 py-4 text-lg font-semibold text-black transition hover:scale-105 hover:bg-brand-primary/90"
         >
-          Generate Certificate
+          Generate Certificate - {timeLeft}
         </Button>
         <Button
           onClick={onRestart}

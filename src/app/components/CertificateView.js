@@ -10,13 +10,6 @@ export default function CertificateView({ name }) {
 
   return (
     <div className="z-10 flex w-full max-w-md flex-col items-center justify-center p-4 text-center">
-      <Image
-        src="/logo.png"
-        alt="Logo"
-        width={150}
-        height={150}
-        className="mb-8"
-      />
       <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">
         Scan to Download Your Certificate
       </h1>
