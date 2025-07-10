@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { generateCertificateDataUrl } from "@/lib/certificate";
 
-export default function CertificateView({ name = "Test Name" }) {
+export default function CertificateView({ name = "" }) {
   const [certificateUrl, setCertificateUrl] = useState("");
   const [error, setError] = useState(null);
 
