@@ -11,8 +11,8 @@ import CertificateView from "./components/CertificateView";
 import Image from "next/image";
 
 export default function Page() {
-  const [view, setView] = useState("intro");
-  const [name, setName] = useState("");
+  const [view, setView] = useState("certificate");
+  const [name, setName] = useState("Test Name");
   const [difficulty, setDifficulty] = useState("");
   const [score, setScore] = useState(0);
   const [totalQuestions, setTotalQuestions] = useState(0);
