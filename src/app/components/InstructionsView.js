@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export default function InstructionsView({ onStartQuiz }) {
   const instructions = [
     "Each question has a single correct answer.",
-    "You will have a limited time to answer each question.",
+    "You will have a 120 seconds to complete the quiz.",
     "Your score will be calculated based on correct answers.",
     'Click "Start Quiz" when you are ready to begin.',
   ];
