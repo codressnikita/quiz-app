@@ -2,7 +2,7 @@
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "productName": "Quiz-app",
   "version": "0.1.0",
-  "identifier": "com.experts.dev",
+  "identifier": "com.quiz-app.dev",
   "build": {
     "frontendDist": "../out",
     "devUrl": "http://localhost:3000",

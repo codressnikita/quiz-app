@@ -5,12 +5,15 @@ import QRCode from "qrcode";
 import { generateCertificateDataUrl } from "@/lib/certificate";
 import Loader from "./Loader";
 import ErrorMessage from "./ErrorMessage";
+import { put } from "@vercel/blob";
 
 export default function CertificateView({ name = "" }) {
   const [publicUrl, setPublicUrl] = useState("");
   const [qrCodeUrl, setQrCodeUrl] = useState("");
   const [status, setStatus] = useState("idle");
   const [error, setError] = useState(null);
+  const blobReadWriteToken =
+    "vercel_blob_rw_1e0akAaW3IACiPX3_Fh2qSAdRJy3wUNR9UyrtspUCcb36yx";
 
   useEffect(() => {
     let isMounted = true;
@@ -26,31 +29,24 @@ export default function CertificateView({ name = "" }) {
         const blob = await (await fetch(dataUrl)).blob();
         if (!isMounted) return;
 
-        // 3. Upload to Vercel Blob
+        // 3. Upload to Vercel Blob via our API route
         setStatus("uploading");
         const filename = `${encodeURIComponent(
           name
         )}-${Date.now()}-certificate.jpeg`;
-        const response = await fetch(
-          `/api/upload-certificate?filename=${filename}`,
-          {
-            method: "POST",
-            body: blob,
-          }
-        );
 
-        if (!response.ok) {
-          throw new Error("Failed to upload certificate.");
-        }
+        const newBlob = await put(filename, blob, {
+          access: "public",
+          token: blobReadWriteToken,
+        });
 
-        const result = await response.json();
         if (!isMounted) return;
 
-        setPublicUrl(result.url);
+        setPublicUrl(newBlob.url);
         setStatus("success");
 
         // 4. Generate QR code
-        const qrUrl = await QRCode.toDataURL(result.url);
+        const qrUrl = await QRCode.toDataURL(newBlob.url);
         if (isMounted) {
           setQrCodeUrl(qrUrl);
         }
