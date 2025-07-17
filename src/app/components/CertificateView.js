@@ -6,14 +6,29 @@ import { generateCertificateDataUrl } from "@/lib/certificate";
 import Loader from "./Loader";
 import ErrorMessage from "./ErrorMessage";
 import { put } from "@vercel/blob";
+import { Button } from "@/components/ui/button";
 
-export default function CertificateView({ name = "" }) {
+export default function CertificateView({ name = "", onRestart }) {
   const [publicUrl, setPublicUrl] = useState("");
   const [qrCodeUrl, setQrCodeUrl] = useState("");
   const [status, setStatus] = useState("idle");
   const [error, setError] = useState(null);
+  const [timeLeft, setTimeLeft] = useState(60);
   const blobReadWriteToken =
     "vercel_blob_rw_1e0akAaW3IACiPX3_Fh2qSAdRJy3wUNR9UyrtspUCcb36yx";
+
+  useEffect(() => {
+    if (timeLeft <= 0) {
+      onRestart();
+      return;
+    }
+
+    const timerId = setInterval(() => {
+      setTimeLeft((t) => t - 1);
+    }, 1000);
+
+    return () => clearInterval(timerId);
+  }, [timeLeft, onRestart]);
 
   useEffect(() => {
     let isMounted = true;
@@ -85,8 +100,8 @@ export default function CertificateView({ name = "" }) {
         Your Certificate is Ready!
       </h1>
       {qrCodeUrl && (
-        <div className="mt-8">
-          <h2 className="mb-4 text-2xl font-bold">Scan to View</h2>
+        <div className="mt-8 flex flex-col items-center justify-center">
+          <h2 className="mb-4 text-2xl font-bold">Scan to View/Download</h2>
           <img
             src={qrCodeUrl}
             alt="QR Code for Certificate"
@@ -94,6 +109,14 @@ export default function CertificateView({ name = "" }) {
           />
         </div>
       )}
+      <div className="mt-8">
+        <Button
+          onClick={onRestart}
+          className="w-64 transform rounded-full bg-brand-primary px-8 py-4 text-lg font-semibold text-black transition hover:scale-105 hover:bg-brand-primary/90"
+        >
+          Restart Quiz - {timeLeft}s
+        </Button>
+      </div>
     </div>
   );
 }

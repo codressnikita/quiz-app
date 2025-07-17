@@ -25,11 +25,8 @@ export default function Page() {
       .then((res) => res.json())
       .then((data) => {
         setAllQuestionsData(data);
-        const options = data.map((item) => ({
-          level: item.level,
-          set: item.set,
-        }));
-        setDifficultyOptions(options);
+        const uniqueLevels = [...new Set(data.map((item) => item.level))];
+        setDifficultyOptions(uniqueLevels);
       });
   }, []);
 
@@ -42,16 +39,22 @@ export default function Page() {
     setView("difficulty");
   };
 
-  const handleDifficultySelect = (selectedDifficulty) => {
-    setDifficulty(`${selectedDifficulty.level} - ${selectedDifficulty.set}`);
+  const handleDifficultySelect = (selectedLevel) => {
+    setDifficulty(selectedLevel);
 
-    const difficultyData = allQuestionsData.find(
-      (item) =>
-        item.level === selectedDifficulty.level &&
-        item.set === selectedDifficulty.set
+    const matchingSets = allQuestionsData.filter(
+      (item) => item.level === selectedLevel
     );
-    const filteredQuestions = difficultyData ? difficultyData.questions : [];
-    setQuestions(filteredQuestions.sort(() => Math.random() - 0.5));
+
+    const combinedQuestions = matchingSets.reduce(
+      (acc, curr) => acc.concat(curr.questions),
+      []
+    );
+
+    const shuffledQuestions = combinedQuestions.sort(() => Math.random() - 0.5);
+    const selectedQuestions = shuffledQuestions.slice(0, 12);
+
+    setQuestions(selectedQuestions);
     setView("instructions");
   };
 
@@ -114,7 +117,9 @@ export default function Page() {
           onRestart={handleRestart}
         />
       )}
-      {view === "certificate" && <CertificateView name={name} />}
+      {view === "certificate" && (
+        <CertificateView name={name} onRestart={handleRestart} />
+      )}
     </main>
   );
 }

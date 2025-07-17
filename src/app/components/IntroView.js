@@ -6,7 +6,7 @@ export default function IntroView({ onStartQuiz }) {
   return (
     <div className="z-10 flex flex-col items-center justify-center p-4 text-center">
       <h1 className="mb-12 text-5xl text-brand-primary font-extrabold tracking-tight">
-        Quiz time
+        Quiz Time
       </h1>
       <Button
         onClick={onStartQuiz}

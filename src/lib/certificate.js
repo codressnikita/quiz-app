@@ -27,7 +27,7 @@ export const generateCertificateDataUrl = (name) => {
 
       // Whiten out [Insert Date]
       ctx.fillStyle = certificateBgColor;
-      ctx.fillRect(scale(1450), scale(935), scale(400), scale(100));
+      ctx.fillRect(scale(1400), scale(935), scale(400), scale(100));
 
       // Draw current date
       const today = new Date();
@@ -38,7 +38,7 @@ export const generateCertificateDataUrl = (name) => {
       ctx.fillStyle = "#595959";
       ctx.font = `${scale(64)}px serif`;
       ctx.textAlign = "left";
-      ctx.fillText(formattedDate, scale(1450), scale(995));
+      ctx.fillText(formattedDate, scale(1400), scale(1015));
 
       // Whiten out [PARTICIPANT'S NAME]
       ctx.fillStyle = certificateBgColor;

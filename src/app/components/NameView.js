@@ -15,9 +15,6 @@ export default function NameView({ onNext }) {
 
   return (
     <div className="z-10 flex flex-col items-center justify-center p-4 text-center">
-      <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">
-        Tell us your name
-      </h1>
       <input
         type="text"
         value={name}
