@@ -49,7 +49,7 @@ export default function QuizView({ questions, onFinish, difficulty }) {
 
   const getButtonClass = (option) => {
     const baseClasses =
-      "w-full transform rounded-lg border-2 px-6 py-4 text-lg transition justify-between items-center flex";
+      "w-full transform rounded-lg border-2 px-6 py-4 text-lg transition justify-between items-start flex h-auto !h-auto";
     if (selectedAnswer !== null) {
       const isCorrectAnswer =
         option === questions[currentQuestionIndex].correct_answer;
@@ -110,7 +110,7 @@ export default function QuizView({ questions, onFinish, difficulty }) {
             disabled={selectedAnswer !== null}
             className={getButtonClass(option)}
           >
-            <span className="text-left">{option}</span>
+            <span className="flex-1 whitespace-normal text-left">{option}</span>
             {selectedAnswer !== null &&
               option === currentQuestion.correct_answer && (
                 <svg

@@ -27,7 +27,7 @@ export const generateCertificateDataUrl = (name) => {
 
       // Whiten out [Insert Date]
       ctx.fillStyle = certificateBgColor;
-      ctx.fillRect(scale(1400), scale(935), scale(400), scale(100));
+      ctx.fillRect(scale(1920), scale(1335), scale(400), scale(100));
 
       // Draw current date
       const today = new Date();
@@ -38,17 +38,17 @@ export const generateCertificateDataUrl = (name) => {
       ctx.fillStyle = "#595959";
       ctx.font = `${scale(64)}px serif`;
       ctx.textAlign = "left";
-      ctx.fillText(formattedDate, scale(1400), scale(1015));
+      ctx.fillText(formattedDate, scale(1920), scale(1390));
 
       // Whiten out [PARTICIPANT'S NAME]
       ctx.fillStyle = certificateBgColor;
-      ctx.fillRect(scale(900), scale(1050), scale(900), scale(108));
+      ctx.fillRect(scale(1100), scale(1450), scale(1100), scale(120));
 
       // Draw participant's name
       ctx.fillStyle = "#333";
       ctx.font = `bold ${scale(80)}px serif`;
       ctx.textAlign = "center";
-      ctx.fillText(name.toUpperCase(), canvas.width / 2, scale(1150));
+      ctx.fillText(name.toUpperCase(), canvas.width / 2, scale(1550));
 
       resolve(canvas.toDataURL("image/jpeg", 0.9));
     };
