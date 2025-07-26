@@ -16,7 +16,7 @@ export default function DifficultyView({
           <Button
             key={level}
             onClick={() => onSelectDifficulty(level)}
-            className="w-40 transform rounded-full bg-brand-primary px-6 py-3 text-base font-semibold text-black transition hover:scale-105 hover:bg-brand-primary/90"
+            className="w-40 transform rounded-full bg-brand-primary px-6 py-3 text-base font-semibold text-black transition active:scale-95 active:bg-brand-primary/90"
           >
             {level}
           </Button>

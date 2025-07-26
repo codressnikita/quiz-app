@@ -27,7 +27,7 @@ export default function NameView({ onNext }) {
         onClick={handleNextClick}
         variant="outline"
         disabled={!name.trim()}
-        className="w-48 transform rounded-full border-2 border-brand-primary px-8 py-4 text-lg font-semibold text-brand-primary transition hover:scale-105 hover:bg-brand-primary hover:text-black"
+        className="w-48 transform rounded-full border-2 border-brand-primary px-8 py-4 text-lg font-semibold text-brand-primary transition active:scale-95 active:bg-brand-primary active:text-black"
       >
         Next
       </Button>

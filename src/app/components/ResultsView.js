@@ -51,13 +51,13 @@ export default function ResultsView({
       <div className="flex flex-wrap justify-center gap-4">
         <Button
           onClick={onGenerateCertificate}
-          className="w-64 transform rounded-full bg-brand-primary px-8 py-4 text-lg font-semibold text-black transition hover:scale-105 hover:bg-brand-primary/90"
+          className="w-64 transform rounded-full bg-brand-primary px-8 py-4 text-lg font-semibold text-black transition active:scale-95 active:bg-brand-primary/90"
         >
           Generate Certificate - {timeLeft}
         </Button>
         <Button
           onClick={onRestart}
-          className="w-64 transform rounded-full bg-gray-600 px-8 py-4 text-lg font-semibold transition hover:scale-105 hover:bg-gray-700"
+          className="w-64 transform rounded-full bg-gray-600 px-8 py-4 text-lg font-semibold transition active:scale-95 active:bg-gray-700"
         >
           Restart Quiz
         </Button>

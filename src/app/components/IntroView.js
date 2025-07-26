@@ -11,8 +11,7 @@ export default function IntroView({ onStartQuiz }) {
       <Button
         onClick={onStartQuiz}
         variant="outline"
-        // className="w-48 transform rounded-full border-2 border-brand-primary px-8 py-4 text-lg font-semibold text-brand-primary transition hover:scale-105 hover:bg-brand-primary hover:text-black"
-        className="text-2xl font-semibold px-8 py-4 border-2 border-brand-primary text-brand-primary bg-transparent rounded-full"
+        className="text-2xl font-semibold px-8 py-4 border-2 border-brand-primary text-brand-primary bg-transparent rounded-full active:scale-95 active:bg-brand-primary active:text-black"
       >
         Tap to Begin
       </Button>

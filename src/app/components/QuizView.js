@@ -61,7 +61,7 @@ export default function QuizView({ questions, onFinish, difficulty }) {
       }
       return `${baseClasses} border-gray-600 bg-transparent text-gray-500`;
     }
-    return `${baseClasses} border-brand-primary bg-transparent text-gray-300 hover:bg-brand-primary/20`;
+    return `${baseClasses} border-brand-primary bg-transparent text-gray-300 active:bg-brand-primary/20`;
   };
 
   if (questions.length === 0) {

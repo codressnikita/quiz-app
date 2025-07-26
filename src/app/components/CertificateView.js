@@ -112,7 +112,7 @@ export default function CertificateView({ name = "", onRestart }) {
       <div className="mt-8">
         <Button
           onClick={onRestart}
-          className="w-64 transform rounded-full bg-brand-primary px-8 py-4 text-lg font-semibold text-black transition hover:scale-105 hover:bg-brand-primary/90"
+          className="w-64 transform rounded-full bg-brand-primary px-8 py-4 text-lg font-semibold text-black transition active:scale-95 active:bg-brand-primary/90"
         >
           Restart Quiz - {timeLeft}s
         </Button>
