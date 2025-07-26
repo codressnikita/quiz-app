@@ -88,7 +88,7 @@ export default function Page() {
         alt="Logo"
         width={view === "quiz" || view === "results" ? 300 : 400}
         height={view === "quiz" || view === "results" ? 200 : 300}
-        className="mb-8"
+        className="mb-8 h-auto w-[60vw]"
       />
       {view === "intro" && <IntroView onStartQuiz={handleStartQuiz} />}
       {view === "name" && <NameView onNext={handleNameSubmit} />}
