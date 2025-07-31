@@ -12,7 +12,7 @@
       {
         "id": 2,
         "question": "In which year was Shri O.P. Jindal born?",
-        "options": ["1925", "1930", "1935", "1940"],
+        "options": ["1925", "1935", "1930", "1940"],
         "correct_answer": "1930"
       },
       {
@@ -20,9 +20,9 @@
         "question": "What values were Shri O.P. Jindal known for in his personal and professional life?",
         "options": [
           "Ambition, risk-taking, and growth",
-          "Hard work, honesty, and humility",
           "Innovation, strategy, and competition",
-          "Efficiency, fame, and influence"
+          "Efficiency, fame, and influence",
+          "Hard work, honesty, and humility"
         ],
         "correct_answer": "Hard work, honesty, and humility"
       },
@@ -35,7 +35,7 @@
           "Hisar Steel Corporation",
           "Jindal Industries"
         ],
-        "correct_answer": "Jindal Industries"
+        "correct_answer": "Jindal India Limited"
       },
       {
         "id": 5,
@@ -46,7 +46,7 @@
       {
         "id": 6,
         "question": "Which state did Shri O.P. Jindal serve as an MLA?",
-        "options": ["Punjab", "Haryana", "Uttar Pradesh", "Delhi"],
+        "options": ["Punjab", "Uttar Pradesh", "Delhi", "Haryana"],
         "correct_answer": "Haryana"
       },
       {
@@ -64,8 +64,8 @@
         "id": 8,
         "question": "What was the primary focus of Shri O.P. Jindal’s industrial enterprises?",
         "options": [
-          "Developing consumer brands",
           "Self-reliant steel manufacturing",
+          "Developing consumer brands",
           "Importing and trading raw materials",
           "Mining natural resources"
         ],
@@ -82,8 +82,8 @@
         "question": "Which role did Shri O.P. Jindal serve in the Haryana state government?",
         "options": [
           "Health Minister",
-          "Power Minister",
           "Finance Minister",
+          "Power Minister",
           "Industries Minister"
         ],
         "correct_answer": "Power Minister"
@@ -92,8 +92,8 @@
         "id": 11,
         "question": "Which awards or recognitions did Shri O.P. Jindal receive for his contributions?",
         "options": [
-          "Padma Shri",
           "Posthumous industry awards",
+          "Padma Shri",
           "Bharat Ratna",
           "None"
         ],
@@ -181,7 +181,7 @@
       {
         "id": 8,
         "question": "Which city became central to the Jindal empire?",
-        "options": ["Chandigarh", "Hisar", "Noida", "Delhi"],
+        "options": ["Chandigarh", "Noida", "Delhi", "Hisar"],
         "correct_answer": "Hisar"
       },
       {
@@ -189,9 +189,9 @@
         "question": "What kind of entrepreneur was Shri O.P. Jindal?",
         "options": [
           "Heir to family business",
-          "First-generation entrepreneur",
           "Politically supported",
-          "Internationally trained"
+          "Internationally trained",
+          "First-generation entrepreneur"
         ],
         "correct_answer": "First-generation entrepreneur"
       },
@@ -200,8 +200,8 @@
         "question": "What was India’s greatest resource, according to Shri O.P. Jindal?",
         "options": [
           "Minerals",
-          "Youth and talent",
           "Oil reserves",
+          "Youth and talent",
           "Industries"
         ],
         "correct_answer": "Youth and talent"
@@ -221,8 +221,8 @@
         "id": 12,
         "question": "Which political party was Shri O.P. Jindal associated with?",
         "options": [
-          "Bharatiya Janata Party",
           "Indian National Congress",
+          "Bharatiya Janata Party",
           "Communist Party of India",
           "Aam Aadmi Party"
         ],
@@ -245,8 +245,8 @@
         "question": "How did Shri O.P. Jindal’s leadership influence the steel sector in India?",
         "options": [
           "He boosted steel exports",
-          "He set benchmarks for integrated steel production",
           "He privatized public sector companies",
+          "He set benchmarks for integrated steel production",
           "He imported steel and increased foreign investment"
         ],
         "correct_answer": "He set benchmarks for integrated steel production"
@@ -255,8 +255,8 @@
         "id": 3,
         "question": "What was Shri O.P. Jindal’s philosophy on industrial development?",
         "options": [
-          "Outsourcing manufacturing to streamline operations",
           "Promoting indigenous industry and self-reliance",
+          "Outsourcing manufacturing to streamline operations",
           "Boosting imports to scale faster",
           "Importing advanced machinery to reduce manufacturing costs"
         ],
@@ -267,9 +267,9 @@
         "question": "What structural challenge did Jindal Group face in its early years and how was it overcome?",
         "options": [
           "High competition, overcame through price cuts",
-          "Lack of capital, overcame through innovation",
           "Low market demand, overcame through marketing efforts",
-          "Lack of skilled labour, overcame through training programmes"
+          "Lack of skilled labour, overcame through training programmes",
+          "Lack of capital, overcame through innovation"
         ],
         "correct_answer": "Lack of capital, overcame through innovation"
       },
@@ -321,8 +321,8 @@
         "id": 9,
         "question": "What was a notable feature of Shri O.P. Jindal’s management style?",
         "options": [
-          "Top-down hierarchy",
           "Hands-on technical involvement",
+          "Top-down hierarchy",
           "Weekly memos",
           "Anonymous feedback"
         ],
@@ -333,8 +333,8 @@
         "question": "In what ways did Shri O.P. Jindal’s companies integrate technology into manufacturing?",
         "options": [
           "Focused on cost-saving manual labour",
-          "Adopted automation and new machinery",
           "Focused primarily on traditional craftsmanship",
+          "Adopted automation and new machinery",
           "Used imported technologies"
         ],
         "correct_answer": "Adopted automation and new machinery"
@@ -405,8 +405,8 @@
         "question": "Why did Shri O.P. Jindal resist going public early on?",
         "options": [
           "Avoided taxation",
-          "Concerned about losing control",
           "Disliked shareholders",
+          "Concerned about losing control",
           "Believed that markets were too volatile"
         ],
         "correct_answer": "Concerned about losing control"
@@ -427,9 +427,9 @@
         "question": "What lessons can modern Indian entrepreneurs learn from Shri O.P. Jindal’s journey?",
         "options": [
           "Prioritize rapid profits over long-term value creation",
-          "Embrace resilience and ethics",
           "Avoid taking risks and personal involvement in operations",
-          "Focus solely on high-growth urban markets"
+          "Focus solely on high-growth urban markets",
+          "Embrace resilience and ethics"
         ],
         "correct_answer": "Embrace resilience and ethics"
       },
@@ -448,9 +448,9 @@
         "id": 8,
         "question": "Why was the Hisar factory pioneering?",
         "options": [
-          "First to use indigenous pipe-making machines",
           "First to export machinery",
           "Largest in Asia",
+          "First to use indigenous pipe-making machines",
           "Solar-powered factory"
         ],
         "correct_answer": "First to use indigenous pipe-making machines"
@@ -460,9 +460,9 @@
         "question": "How did Shri O.P. Jindal’s values reflect in the operational policies of the group companies?",
         "options": [
           "Maximisation of shareholder profits at all costs",
-          "Employee welfare and ethical practices",
           "Lean and minimal HR policies",
-          "High turnover in leadership roles"
+          "High turnover in leadership roles",
+          "Employee welfare and ethical practices"
         ],
         "correct_answer": "Employee welfare and ethical practices"
       },
@@ -471,8 +471,8 @@
         "question": "How did Shri O.P. Jindal contribute to India’s self-reliance in steel production?",
         "options": [
           "By importing low-cost steel",
-          "By setting up indigenous plants",
           "By exporting ore directly",
+          "By setting up indigenous plants",
           "By lobbying international agencies"
         ],
         "correct_answer": "By setting up indigenous plants"
@@ -492,8 +492,8 @@
         "id": 12,
         "question": "How did Shri O.P. Jindal’s early experiences as a mechanic shape his approach to industrial leadership?",
         "options": [
-          "He relied entirely on technical experts",
           "He emphasized hands-on problem-solving",
+          "He relied entirely on technical experts",
           "He believed that manual work should be separated from executive roles",
           "He focused on administrative work and avoided technical work"
         ],
@@ -510,9 +510,9 @@
         "question": "How did Shri O.P. Jindal manage the balance between entrepreneurship and public service?",
         "options": [
           "Prioritised politics over business operations",
-          "Balanced both roles effectively",
           "Delegated public service responsibilities",
-          "Stepped away from business during political career"
+          "Stepped away from business during political career",
+          "Balanced both roles effectively"
         ],
         "correct_answer": "Balanced both roles effectively"
       },
@@ -520,8 +520,8 @@
         "id": 2,
         "question": "What were the global influences on Shri O.P. Jindal’s approach to business and innovation?",
         "options": [
-          "Followed the model of American tech companies",
           "Localized global technologies",
+          "Followed the model of American tech companies",
           "Focused solely on indigenous practices",
           "Followed Japanese models"
         ],
@@ -542,8 +542,8 @@
         "id": 4,
         "question": "What motivated Shri O.P. Jindal to begin manufacturing pipe bends and sockets from scrap steel?",
         "options": [
-          "He wanted to reduce production costs",
           "A reaction to foreign branding on steel pipes",
+          "He wanted to reduce production costs",
           "Advice from early bureaucrats on steel-sector dependence",
           "Observing inefficiencies in import logistics"
         ],
@@ -554,8 +554,8 @@
         "question": "What was Shri O.P. Jindal’s unique approach to meetings?",
         "options": [
           "Formal meetings in boardrooms",
-          "Walk-and-talks around machines",
           "Virtual meetings with department heads",
+          "Walk-and-talks around machines",
           "Relied on presentations, written reports and memos"
         ],
         "correct_answer": "Walk-and-talks around machines"
@@ -576,9 +576,9 @@
         "question": "How did Shri O.P. Jindal deal with restrictive industrial policies?",
         "options": [
           "Paused expansion plans",
-          "Innovated around them",
           "Lobbied for government reforms",
-          "Shifted operations abroad"
+          "Shifted operations abroad",
+          "Innovated around them"
         ],
         "correct_answer": "Innovated around them"
       },
@@ -598,8 +598,8 @@
         "question": "Which philosophies influenced Shri O.P. Jindal’s industrial ideas?",
         "options": [
           "Soviet planning",
-          "Gandhian and Nehruvian ideals",
           "Capitalist markets",
+          "Gandhian and Nehruvian ideals",
           "Western socialism"
         ],
         "correct_answer": "Gandhian and Nehruvian ideals"
@@ -686,9 +686,9 @@
         "id": 5,
         "question": "In what way did Shri O.P. Jindal see factories as educational spaces?",
         "options": [
-          "To train workers in discipline and ethics",
           "To reduce dependence on formal education",
           "To study human resource practices",
+          "To train workers in discipline and ethics",
           "To train managers in leadership"
         ],
         "correct_answer": "To train workers in discipline and ethics"
@@ -698,9 +698,9 @@
         "question": "Why did Shri O.P. Jindal believe strongly in local sourcing?",
         "options": [
           "To cut costs",
-          "To empower communities",
           "To reduce import duties",
-          "To avoid supply chain delays"
+          "To avoid supply chain delays",
+          "To empower communities"
         ],
         "correct_answer": "To empower communities"
       },
@@ -720,8 +720,8 @@
         "question": "How did Shri O.P. Jindal describe the perfect engineer?",
         "options": [
           "A man who knows theory.",
-          "A man who talks to machines.",
           "A man who avoids manuals.",
+          "A man who talks to machines.",
           "A man who fixes without tools."
         ],
         "correct_answer": "A man who talks to machines."
@@ -763,8 +763,8 @@
         "id": 12,
         "question": "Why did Shri O.P. Jindal avoid speculative industries?",
         "options": [
-          "Lacked long-term sustainability",
           "Lacked any national value",
+          "Lacked long-term sustainability",
           "Diverted focus from core industrial development",
           "Involved high risk and offered low returns"
         ],
