@@ -153,7 +153,7 @@
           "Jindal Steel Corp",
           "Jindal Tube Mills"
         ],
-        "correct_answer": "Jindal Pipes"
+        "correct_answer": "Jindal India Limited"
       },
       {
         "id": 5,
@@ -176,7 +176,7 @@
         "id": 7,
         "question": "By what nickname was Shri O.P. Jindal popularly known within industry?",
         "options": ["Pipe King", "Steel Tycoon", "Iron Wizard", "Tech Guru"],
-        "correct_answer": "Pipe King"
+        "correct_answer": "Steel Tycoon"
       },
       {
         "id": 8,
@@ -293,7 +293,7 @@
           "Spiritual texts",
           "Economic reports"
         ],
-        "correct_answer": "Spiritual texts"
+        "correct_answer": "Engineering manuals"
       },
       {
         "id": 7,
@@ -547,7 +547,7 @@
           "Advice from early bureaucrats on steel-sector dependence",
           "Observing inefficiencies in import logistics"
         ],
-        "correct_answer": "Observing inefficiencies in import logistics"
+        "correct_answer": "A reaction to foreign branding on steel pipes"
       },
       {
         "id": 5,
@@ -569,7 +569,7 @@
           "Informal leadership through seniority",
           "CEO-dominant model"
         ],
-        "correct_answer": "Family-run decision making model"
+        "correct_answer": "Independent board structure"
       },
       {
         "id": 7,
@@ -658,7 +658,7 @@
         "id": 2,
         "question": "Which Indian value did Shri O.P. Jindal say “runs through the veins of every machine I make”?",
         "options": ["Dharma", "Karma", "Moksha", "Niti"],
-        "correct_answer": "Karma"
+        "correct_answer": "Dharma"
       },
       {
         "id": 3,
@@ -735,7 +735,7 @@
           "Renewable/green energy integration in steel manufacturing",
           "Solar-panel roofing for administrative buildings"
         ],
-        "correct_answer": "Coal-gasification electric furnaces"
+        "correct_answer": "Renewable/green energy integration in steel manufacturing"
       },
       {
         "id": 10,
@@ -768,7 +768,7 @@
           "Diverted focus from core industrial development",
           "Involved high risk and offered low returns"
         ],
-        "correct_answer": "Lacked long-term sustainability"
+        "correct_answer": "Lacked any national value"
       }
     ]
   }
