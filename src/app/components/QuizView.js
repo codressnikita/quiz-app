@@ -49,7 +49,7 @@ export default function QuizView({ questions, onFinish, difficulty }) {
 
   const getButtonClass = (option) => {
     const baseClasses =
-      "w-full transform rounded-lg border-2 px-6 py-4 text-lg transition justify-between items-start flex h-auto !h-auto";
+      "w-full transform rounded-lg border-2 px-6 py-4 text-2xl transition justify-between items-start flex h-auto !h-auto";
     if (selectedAnswer !== null) {
       const isCorrectAnswer =
         option === questions[currentQuestionIndex].correct_answer;
@@ -74,7 +74,7 @@ export default function QuizView({ questions, onFinish, difficulty }) {
   return (
     <div className="z-10 flex w-full max-w-3xl flex-col items-center justify-center p-4 text-center">
       <div className="mb-4 flex w-full items-center justify-between">
-        <div className="rounded-full bg-gray-800 px-4 py-1 text-sm font-semibold text-brand-primary">
+        <div className="rounded-full bg-gray-800 px-4 py-1 text-lg font-semibold text-brand-primary">
           {difficulty}
         </div>
         <div className="flex items-center space-x-2 text-lg font-semibold text-brand-primary">
@@ -99,7 +99,7 @@ export default function QuizView({ questions, onFinish, difficulty }) {
       </div>
       <Progress value={progress} className="mb-4 w-full" />
 
-      <h2 className="mb-6 text-2xl font-semibold">
+      <h2 className="mb-6 text-4xl font-semibold">
         {currentQuestion.question}
       </h2>
       <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">

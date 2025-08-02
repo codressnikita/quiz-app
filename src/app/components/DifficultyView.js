@@ -8,7 +8,7 @@ export default function DifficultyView({
 }) {
   return (
     <div className="z-10 flex flex-col items-center justify-center p-4 text-center">
-      <h1 className="mb-8 text-4xl font-bold tracking-tight md:text-5xl">
+      <h1 className="mb-8 text-7xl font-bold tracking-tight">
         Select difficulty level
       </h1>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -16,7 +16,7 @@ export default function DifficultyView({
           <Button
             key={level}
             onClick={() => onSelectDifficulty(level)}
-            className="w-40 transform rounded-full bg-brand-primary px-6 py-3 text-base font-semibold text-black transition active:scale-95 active:bg-brand-primary/90"
+            className="w-40 transform rounded-full bg-brand-primary text-2xl px-8 py-4  font-semibold text-black transition active:scale-95 active:bg-brand-primary/90"
           >
             {level}
           </Button>

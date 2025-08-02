@@ -96,12 +96,12 @@ export default function CertificateView({ name = "", onRestart }) {
 
   return (
     <div className="z-10 flex w-full max-w-5xl flex-col items-center justify-center p-4 text-center">
-      <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">
+      <h1 className="mb-4 text-5xl font-bold tracking-tight">
         Your Certificate is Ready!
       </h1>
       {qrCodeUrl && (
         <div className="mt-8 flex flex-col items-center justify-center">
-          <h2 className="mb-4 text-2xl font-bold">Scan to View/Download</h2>
+          <h2 className="mb-4 text-3xl font-bold">Scan to View/Download</h2>
           <img
             src={qrCodeUrl}
             alt="QR Code for Certificate"
@@ -112,7 +112,7 @@ export default function CertificateView({ name = "", onRestart }) {
       <div className="mt-8">
         <Button
           onClick={onRestart}
-          className="w-64 transform rounded-full bg-brand-primary px-8 py-4 text-lg font-semibold text-black transition active:scale-95 active:bg-brand-primary/90"
+          className="w-64 transform rounded-full bg-brand-primary px-12 py-8 text-2xl font-semibold text-black transition active:scale-95 active:bg-brand-primary/90"
         >
           Restart Quiz - {timeLeft}s
         </Button>

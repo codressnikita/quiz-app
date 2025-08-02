@@ -29,13 +29,11 @@ export default function ResultsView({
 
   return (
     <div className="z-10 flex w-full max-w-2xl flex-col items-center justify-center p-4 text-center">
-      <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">
-        Quiz Complete!
-      </h1>
-      <p className="mb-8 text-2xl text-gray-300">
+      <h1 className="mb-4 text-7xl font-bold tracking-tight">Quiz Complete!</h1>
+      <p className="mb-8 text-4xl text-gray-300">
         Congratulations, {name}! Here are your results.
       </p>
-      <div className="mb-8 grid grid-cols-2 gap-x-8 gap-y-4 rounded-lg bg-gray-800 p-6 text-lg">
+      <div className="mb-8 grid grid-cols-2 gap-x-8 gap-y-4 rounded-lg bg-gray-800 p-6 text-xl">
         <div className="text-left font-semibold">Questions Attempted:</div>
         <div className="text-right">{totalQuestions}</div>
         <div className="text-left font-semibold">Correct Answers:</div>
@@ -51,13 +49,13 @@ export default function ResultsView({
       <div className="flex flex-wrap justify-center gap-4">
         <Button
           onClick={onGenerateCertificate}
-          className="w-64 transform rounded-full bg-brand-primary px-8 py-4 text-lg font-semibold text-black transition active:scale-95 active:bg-brand-primary/90"
+          className="w-72 transform rounded-full bg-brand-primary px-12 py-8 text-2xl font-semibold text-black transition active:scale-95 active:bg-brand-primary/90"
         >
           Generate Certificate - {timeLeft}
         </Button>
         <Button
           onClick={onRestart}
-          className="w-64 transform rounded-full bg-gray-600 px-8 py-4 text-lg font-semibold transition active:scale-95 active:bg-gray-700"
+          className="w-72 transform rounded-full bg-gray-600 px-12 py-8 text-2xl font-semibold transition active:scale-95 active:bg-gray-700"
         >
           Restart Quiz
         </Button>

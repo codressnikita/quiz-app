@@ -20,14 +20,14 @@ export default function NameView({ onNext }) {
         value={name}
         onChange={(e) => setName(e.target.value)}
         placeholder="Enter your name"
-        className="mb-8 w-80 rounded-full bg-gray-800 px-6 py-4 text-center text-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-primary"
+        className="mb-8 w-80 rounded-full bg-gray-800 px-6 py-4 text-center text-2xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-primary"
       />
 
       <Button
         onClick={handleNextClick}
         variant="outline"
         disabled={!name.trim()}
-        className="w-48 transform rounded-full border-2 border-brand-primary px-8 py-4 text-lg font-semibold text-brand-primary transition active:scale-95 active:bg-brand-primary active:text-black"
+        className="w-48 transform rounded-full border-2 border-brand-primary px-12 py-8 text-4xl font-semibold text-brand-primary transition active:scale-95 active:bg-brand-primary active:text-black"
       >
         Next
       </Button>
